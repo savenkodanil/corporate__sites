@@ -1,0 +1,125 @@
+.article__nav__blog {
+    margin-top: 125px;
+
+    article:nth-child(2) {
+        .header__blog {
+            svg {
+                margin-left: 13px;
+            }
+        }
+        .blog {
+            .bottom__line {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .header__blog {
+        display: flex;
+        align-items: center;
+
+        gap: 25px;
+
+        margin-bottom: 20px;
+        h2 {
+            font-weight: 300;
+            font-size: 1.5rem;
+            line-height: 34px;
+
+            color: #22252E;
+
+        }
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .bottom__line {
+            margin: 20px 0 40px 0;
+            border: 1px solid #EBECED;
+        }
+
+        .info {
+            display: flex;
+            gap: 7px;
+            align-items: center;
+            .dots {
+                font-weight: 400;
+                line-height: 22px;
+                            
+                color: #4CB649;
+
+            }
+
+            p {
+                font-weight: 400;
+              
+                line-height: 22px;
+                
+                color: #323642;
+
+                max-width: 260px;
+                
+            }
+        }
+    }
+
+    .tag__cloud {
+        margin-bottom: 320px;
+        .img__blog {
+            img {
+                width: 310px ;
+            }
+        }
+        .tag {
+            position: relative;
+            .img__teg {
+                position: absolute;
+                left: -10px;
+
+                margin-bottom: 50px;
+                img {
+                }
+            }
+    
+            h2 {
+                font-weight: 300;
+                font-size: 1.5rem;
+                line-height: 34px;
+    
+                color: #22252E;
+    
+                margin: 51px 0 15px 0;
+    
+            }
+        }
+    }
+}
+
+@media(max-width:760px) {
+    .article__nav__blog {
+        margin: 10px 0 0 0;
+        .blog {
+            .info {
+                p {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:414px) {
+    .article__nav__blog {
+        .tag__cloud {
+            .img__blog {
+                img {
+                    width: 100%;
+                }
+            }  
+        }
+    }
+    
+}

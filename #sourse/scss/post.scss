@@ -1,0 +1,179 @@
+main {
+    section {
+        .wrapper__post{
+            max-width: 1200px;
+
+            margin: 180px auto 0 auto;
+
+            &.close {
+                margin: 126px auto 0 auto;
+            }
+            .post {
+                display: flex;
+
+                background: #FFFFFF;
+                border: 1px solid #D7D8D9;
+                border-radius: 11px 6px 6px 11px;
+
+                -webkit-box-shadow: 0px 7px 17px -7px #000000; 
+                box-shadow: 0px 7px 17px -11px #000000;
+
+                .wrapper__photo {
+                    img {
+                        width: 100%;
+                        min-width: 300px;
+                        height: 100%;
+                         
+                        object-fit: cover;
+    
+                         border-radius: 10px 0 0px 10px;
+                    }
+            
+                }
+            
+
+                .block__info {
+                    margin: 0 60px;
+                    .header__text {
+                        font-weight: 300;
+                        font-size: 1.5rem;
+                        line-height: 34px;
+                                
+                        color: #22252E;
+
+                        max-width: 480px;
+
+                        margin: 59px 0 84px 0;
+                    }
+
+                    .info__name__date {
+                        margin-bottom: 35px;
+                        .name__date {
+                            display: flex;
+                            gap: 10px;
+
+                            .name {
+                                font-weight: 400;
+                                
+                                line-height: 22px;
+                                
+                                color: #323642;
+                                
+                            }
+
+                            .date {
+                                font-weight: 400;
+                                line-height: 22px;                                     
+                                
+                                color: #889099;
+                            }
+                        }
+
+                        .sub__links {
+                            display: flex;
+                            gap: 5px 3px;
+                            flex-wrap: wrap;
+                            margin: 7px 0;
+                            
+                            a {
+                                font-weight: 400;
+                                font-size: .9rem;
+                                line-height: 16px;
+                                
+                                letter-spacing: 0.5px;
+                                text-transform: uppercase;
+                                color: #4CB649;
+                            }
+                        }
+
+                        .svg__comments {
+                            display: flex;
+                            
+                            gap: 12px;
+
+                            align-items: center;
+
+                            p {
+                                font-weight: 400;
+                                
+                                line-height: 22px;
+                            
+                                                            
+                                color: #889099;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @media(max-width:1230px) {
+            .wrapper__post {
+                margin: 180px 15px 0 15px;
+                &.close {
+                    margin: 126px 15px 0 15px;
+                }
+            }
+        }
+
+        @media(max-width:740px) {
+            .wrapper__post {
+                margin: 205px 15px 0 15px;
+
+                &.close {
+                    margin: 149px 15px 0 15px;
+                }
+
+                .post {
+                    flex-direction: column;
+
+                    
+                    border-radius: 11px 11px 6px 6px;
+                    .wrapper__photo {
+                        img {
+                            border-radius: 10px 10px 0px 0px;
+                        }
+                    }
+
+                   .block__info {
+                       margin: 0 30px;
+                       .header__text {
+                           margin: 27px 0 15px 0 ;
+
+                           max-width: 100%;
+                       }
+
+                       .info__name__date {
+                           margin-bottom: 17px;
+                       }
+                   }
+                }
+            }
+        }
+
+        @media(max-width:688px) {
+            .wrapper__post {
+                margin: 205px 15px 0 15px;
+
+                &.close {
+                    margin: 123px 15px 0 15px;
+                }
+
+            }
+        }
+
+        @media(max-width:500px) {
+            .wrapper__post {
+                margin: 230px 15px 0 15px;
+
+                &.close {
+                    margin: 148px 15px 0 15px;
+                }
+            }
+        }
+
+    }
+}
+
