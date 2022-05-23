@@ -365,101 +365,89 @@
     }
 }
 
-@media(max-width:568px) {
+@media (max-width: 560px) {
+   
     .wrapper__footer {
-        
-
         .info__footer {
+            gap: 45px 28px;
 
             .legal__and__social {
                 .social__media {
-                    bottom: 0;
-                    left: 1px;
-                   .block__social {
-                   }
+                    display: none;   
                 }
             }
-        }
-    }
-}
 
-@media (max-width: 541px) {
-    .wrapper__footer {
+            .about__and__social {
+                flex-direction: column-reverse;
 
-        .info__footer {
-            gap: 45px 40px;
-
-            .legal__and__social {
+                gap: 30px;
                 .social__media {
-                    top: 0;
-                    left: 380px;
-
-                    max-width: 140px;
+                    display: flex;
 
                     .block__social {
-                        gap: 22px 20px;
+                        flex-wrap: wrap;
                     }
-                   
                 }
             }
         }
     }
+    
 }
 
-@media (max-width: 415px) {
-    .wrapper__footer {
+// @media (max-width: 415px) {
+//     .wrapper__footer {
 
-        .info__footer {
+//         .info__footer {
 
-            .legal__and__social {
-                .social__media {
-                    left: 256px;     
-                }
-            }
-        }
-    }
-}
+//             .legal__and__social {
+//                 .social__media {
+//                     left: 256px;     
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 394px) {
-    .wrapper__footer {
+// @media (max-width: 394px) {
+//     .wrapper__footer {
 
-        .info__footer {
+//         .info__footer {
 
-            .legal__and__social {
-                .social__media {
-                    left: 235px;     
-                }
-            }
-        }
-    }
-}
+//             .legal__and__social {
+//                 .social__media {
+//                     left: 235px;     
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 376px) {
-    .wrapper__footer {
+// @media (max-width: 376px) {
+//     .wrapper__footer {
 
-        .info__footer {
+//         .info__footer {
 
-            .legal__and__social {
-                .social__media {
-                    left: 217px;     
-                }
-            }
-        }
-    }
-}
+//             .legal__and__social {
+//                 .social__media {
+//                     left: 217px;     
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 361px) {
-    .wrapper__footer {
+// @media (max-width: 361px) {
+//     .wrapper__footer {
 
-        .info__footer {
+//         .info__footer {
 
-            .legal__and__social {
-                .social__media {
-                    left: 204px;
+//             .legal__and__social {
+//                 .social__media {
+//                     left: 204px;
          
-                }
-            }
-        }
-    }
-}
+//                 }
+//             }
+//         }
+//     }
+// }
 
