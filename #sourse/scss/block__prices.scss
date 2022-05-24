@@ -38,217 +38,219 @@
 
             justify-content: center;
             align-items: flex-start;
-    
-            .block__prices {
-                background: #FFFFFF;
-                border: 1px solid #EBECED;
-                border-radius: 6px;
 
-                padding: 41px 78px;
-
-                box-shadow: 0px 13px 18px -5px rgba(0,0,0,0.93);
-
+            .anim__block {
                 transition: .8s ease;
-
-                opacity: 0;
-                transform: translateY(-25px);
-                
-                &:nth-child(1) {
-                    transition: .7s .1s ease;
-                }
-
-                &:nth-child(2) {
-                    transition: .7s .3s ease;
-                }
-
-                &:nth-child(3) {
-                    transition: .7s .5s ease;
-                }
-
-                &._active {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-
-
-
-                &:hover {
-                    transform: scale(1.1);
-
-                    border: 4px solid #4CB649;
-                }
-
-                .about__price {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    p {
-                        font-weight: 700;
-                       
-                        line-height: 18px;
-                        
-                        text-align: center;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                        
-                        color: #323642; 
+    
+                    opacity: 0;
+                    transform: translateY(-25px);
+                    
+                    &:nth-child(1) {
+                        transition: .7s .1s ease;
+                    }
+    
+                    &:nth-child(2) {
+                        transition: .7s .3s ease;
+                    }
+    
+                    &:nth-child(3) {
+                        transition: .7s .5s ease;
+                    }
+    
+                    &._active {
+                        opacity: 1;
+                        transform: translateY(0);
                     }
 
-                    .green__line {
-                        background: #4CB649;
-                        width: 24px;
-                        height: 2px;
-                        margin: 14px auto 14px auto;
-
+                .block__prices {
+                    background: #FFFFFF;
+                    border: 1px solid #EBECED;
+                    border-radius: 6px;
+    
+                    padding: 41px 78px;
+    
+                    box-shadow: 0px 13px 18px -5px rgba(0,0,0,0.93);
+    
+                    transition: .8s ease;
+    
+                    &:hover {
+                        transform: scale(1.1);
+    
+                        border: 4px solid #4CB649;
                     }
-
-                    .price {
-                        position: relative;
-                        span {
-                            &:nth-child(1) {
-                                font-weight: 300;
-                                font-size: 1.5rem;
-                                line-height: 32px;
-                              
-
-                                color: #22252E; 
-
-                                position: absolute;
-                                top: 12px;
-                                right:  106px;
-
-                            }
-
-                            &:nth-child(2) {
-                                font-weight: 300;
-                                font-size: 3.5rem;
-                                line-height: 66px;
-
-                                letter-spacing: -1.5px;
-
-                                color: #22252E;
-                                
-                                
-                                top: 0;
-
-                            }
-
-                            &:nth-child(3) {
-                                font-weight: 300;
-                                font-size: 1.5rem;
-                                line-height: 32px;
-                              
-
-                                color: #22252E;
-
-                                position: absolute;
-                                top: 38px;
-                                left: 106px;
-                            }
-                        }
-                    }
-
-                    .grey__line {
-                        background: #EBECED;
-                        width: 200px;
-                        height: 1px;
-                        margin: 22px auto 20px auto;
-                    }
-
-                    .price__years {
+    
+                    .about__price {
                         display: flex;
-                        gap: 10px;
-                        span {
-                            &:nth-child(1) {
-                                font-weight: 400;
-                               
-                                line-height: 22px;
-                               
-
-                                text-decoration-line: line-through;
-
-                                color: #F24458;
-
-                            }
-
-                            &:nth-child(2) {
-                                font-weight: 400;
-                                
-                                line-height: 22px;
-                              
-
-                                color: #323642;
-
-                            }
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            font-weight: 700;
+                           
+                            line-height: 18px;
+                            
+                            text-align: center;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            
+                            color: #323642; 
                         }
-                    }
-
-                    .save {
-                        margin: 10px 0 25px 0;
-                    }
-
-                    .button__sing_up {
-                        .btn__sign {
-                            all: unset;
-
-                            border: 2px solid#4CB649;
-                            border-radius: 30px;
-
-                            background: #fff;
-
-                            z-index: 1;
-
+    
+                        .green__line {
+                            background: #4CB649;
+                            width: 24px;
+                            height: 2px;
+                            margin: 14px auto 14px auto;
+    
+                        }
+    
+                        .price {
                             position: relative;
-
-                            overflow: hidden;
-
-                            cursor: pointer;
-                            
-                            width: 205px;
-                            
-                            &::before {
-                                opacity: 0;
-                                content: "";
-            
-                                transition: opacity .4s ease;
-            
-                                z-index: -1;
-            
-                                background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
-            
-                                display: block;
-                                
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                            }
-            
-                            &:hover::before {
-                                opacity: 1;
-                            }
-            
-                            &:hover {
-                            
-                                p {
-                                    color: #fff;
+                            span {
+                                &:nth-child(1) {
+                                    font-weight: 300;
+                                    font-size: 1.5rem;
+                                    line-height: 32px;
+                                  
+    
+                                    color: #22252E; 
+    
+                                    position: absolute;
+                                    top: 12px;
+                                    right:  106px;
+    
+                                }
+    
+                                &:nth-child(2) {
+                                    font-weight: 300;
+                                    font-size: 3.5rem;
+                                    line-height: 66px;
+    
+                                    letter-spacing: -1.5px;
+    
+                                    color: #22252E;
+                                    
+                                    
+                                    top: 0;
+    
+                                }
+    
+                                &:nth-child(3) {
+                                    font-weight: 300;
+                                    font-size: 1.5rem;
+                                    line-height: 32px;
+                                  
+    
+                                    color: #22252E;
+    
+                                    position: absolute;
+                                    top: 38px;
+                                    left: 106px;
                                 }
                             }
-            
-                            p {
-                                font-weight: 500;
-                                line-height: 18px;
+                        }
+    
+                        .grey__line {
+                            background: #EBECED;
+                            width: 200px;
+                            height: 1px;
+                            margin: 22px auto 20px auto;
+                        }
+    
+                        .price__years {
+                            display: flex;
+                            gap: 10px;
+                            span {
+                                &:nth-child(1) {
+                                    font-weight: 400;
+                                   
+                                    line-height: 22px;
+                                   
+    
+                                    text-decoration-line: line-through;
+    
+                                    color: #F24458;
+    
+                                }
+    
+                                &:nth-child(2) {
+                                    font-weight: 400;
+                                    
+                                    line-height: 22px;
+                                  
+    
+                                    color: #323642;
+    
+                                }
+                            }
+                        }
+    
+                        .save {
+                            margin: 10px 0 25px 0;
+                        }
+    
+                        .button__sing_up {
+                            .btn__sign {
+                                all: unset;
+    
+                                border: 2px solid#4CB649;
+                                border-radius: 30px;
+    
+                                background: #fff;
+    
+                                z-index: 1;
+    
+                                position: relative;
+    
+                                overflow: hidden;
+    
+                                cursor: pointer;
                                 
-                                text-align: center;
-                                letter-spacing: 0.8px;
-                                text-transform: uppercase;
+                                width: 205px;
                                 
-                                color: #4CB649;
-            
-                                padding: 11px 60px;
-            
-                                transition: .4s ease;
+                                &::before {
+                                    opacity: 0;
+                                    content: "";
+                
+                                    transition: opacity .4s ease;
+                
+                                    z-index: -1;
+                
+                                    background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+                
+                                    display: block;
+                                    
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                
+                                &:hover::before {
+                                    opacity: 1;
+                                }
+                
+                                &:hover {
+                                
+                                    p {
+                                        color: #fff;
+                                    }
+                                }
+                
+                                p {
+                                    font-weight: 500;
+                                    line-height: 18px;
+                                    
+                                    text-align: center;
+                                    letter-spacing: 0.8px;
+                                    text-transform: uppercase;
+                                    
+                                    color: #4CB649;
+                
+                                    padding: 11px 60px;
+                
+                                    transition: .4s ease;
+                                }
                             }
                         }
                     }
@@ -383,14 +385,16 @@
         .wrapper__prices {
             .flex__block__prices {
                 margin: 40px 0;
-               .block__prices {
+                .anim__block {
+                    .block__prices {
 
-                    padding: 41px 68px;
-
-                   &:hover {
-                       transform: scale(1.1);
+                        padding: 41px 68px;
+    
+                       &:hover {
+                           transform: scale(1.1);
+                       }
                    }
-               }
+                }
             }
 
         }
@@ -400,14 +404,16 @@
         .wrapper__prices {
             .flex__block__prices {
                 margin: 40px 0;
-               .block__prices {
+                .anim__block {
+                    .block__prices {
 
-                    padding: 41px 58px;
-
-                   &:hover {
-                       transform: scale(1.1);
+                        padding: 41px 58px;
+    
+                       &:hover {
+                           transform: scale(1.1);
+                       }
                    }
-               }
+                }
             }
 
         }
@@ -417,14 +423,17 @@
         .wrapper__prices {
             .flex__block__prices {
                 margin: 40px 0;
-               .block__prices {
 
-                    padding: 31px 38px;
+                .anim__block {
+                    .block__prices {
 
-                   &:hover {
-                       transform: scale(1.1);
+                        padding: 31px 38px;
+    
+                       &:hover {
+                           transform: scale(1.1);
+                       }
                    }
-               }
+                }
             }
 
         }

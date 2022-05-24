@@ -4,19 +4,19 @@ function body(){
 
 $(document).ready(function() {
     $('.nav__menu__why').click(function(event) {
-        $('.sub__menu , .arrow').toggleClass('open');
+        $('.sub__menu , .arrow').toggleClass('open active');
     });
 });
 
 $(document).ready(function() {
     $('.nav__menu__sup').click(function(event) {
-        $('.arrow__sup , .sub__menu__sup').toggleClass('open');
+        $('.arrow__sup , .sub__menu__sup').toggleClass('open active');
     });
 });
 
 $(document).ready(function() {
     $('.nav__menu__res').click(function(event) {
-        $('.arrow__res, .sub__menu__res').toggleClass('open');
+        $('.arrow__res, .sub__menu__res').toggleClass('open active');
     });
 });
 
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.burger').click(function(event) {
-        $('.burger , .header , .header__nav , body , .get__start__button , .log__button , .sub__menu , .sub__menu__sup , .sub__menu__res').toggleClass('open active');
+        $('.burger , .header , .header__nav , body , .get__start__button , .log__button ').toggleClass('open');
     });
 });
 

@@ -2159,7 +2159,31 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  opacity: 0;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+.bg__prices .wrapper__prices .flex__block__prices .anim__block:nth-child(1) {
+  -webkit-transition: 0.7s 0.1s ease;
+  transition: 0.7s 0.1s ease;
+}
+.bg__prices .wrapper__prices .flex__block__prices .anim__block:nth-child(2) {
+  -webkit-transition: 0.7s 0.3s ease;
+  transition: 0.7s 0.3s ease;
+}
+.bg__prices .wrapper__prices .flex__block__prices .anim__block:nth-child(3) {
+  -webkit-transition: 0.7s 0.5s ease;
+  transition: 0.7s 0.5s ease;
+}
+.bg__prices .wrapper__prices .flex__block__prices .anim__block._active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices {
   background: #FFFFFF;
   border: 1px solid #EBECED;
   border-radius: 6px;
@@ -2168,33 +2192,13 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
           box-shadow: 0px 13px 18px -5px rgba(0, 0, 0, 0.93);
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
-  opacity: 0;
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices:nth-child(1) {
-  -webkit-transition: 0.7s 0.1s ease;
-  transition: 0.7s 0.1s ease;
-}
-.bg__prices .wrapper__prices .flex__block__prices .block__prices:nth-child(2) {
-  -webkit-transition: 0.7s 0.3s ease;
-  transition: 0.7s 0.3s ease;
-}
-.bg__prices .wrapper__prices .flex__block__prices .block__prices:nth-child(3) {
-  -webkit-transition: 0.7s 0.5s ease;
-  transition: 0.7s 0.5s ease;
-}
-.bg__prices .wrapper__prices .flex__block__prices .block__prices._active {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.bg__prices .wrapper__prices .flex__block__prices .block__prices:hover {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border: 4px solid #4CB649;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2206,7 +2210,7 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
       -ms-flex-align: center;
           align-items: center;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price p {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price p {
   font-weight: 700;
   line-height: 18px;
   text-align: center;
@@ -2214,16 +2218,16 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   text-transform: uppercase;
   color: #323642;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .green__line {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .green__line {
   background: #4CB649;
   width: 24px;
   height: 2px;
   margin: 14px auto 14px auto;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .price {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .price {
   position: relative;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .price span:nth-child(1) {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .price span:nth-child(1) {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 32px;
@@ -2232,7 +2236,7 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   top: 12px;
   right: 106px;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .price span:nth-child(2) {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .price span:nth-child(2) {
   font-weight: 300;
   font-size: 3.5rem;
   line-height: 66px;
@@ -2240,7 +2244,7 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   color: #22252E;
   top: 0;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .price span:nth-child(3) {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .price span:nth-child(3) {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 32px;
@@ -2249,34 +2253,34 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   top: 38px;
   left: 106px;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .grey__line {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .grey__line {
   background: #EBECED;
   width: 200px;
   height: 1px;
   margin: 22px auto 20px auto;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .price__years {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .price__years {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .price__years span:nth-child(1) {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .price__years span:nth-child(1) {
   font-weight: 400;
   line-height: 22px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   color: #F24458;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .price__years span:nth-child(2) {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .price__years span:nth-child(2) {
   font-weight: 400;
   line-height: 22px;
   color: #323642;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .save {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .save {
   margin: 10px 0 25px 0;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .button__sing_up .btn__sign {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .button__sing_up .btn__sign {
   all: unset;
   border: 2px solid #4CB649;
   border-radius: 30px;
@@ -2287,7 +2291,7 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   cursor: pointer;
   width: 205px;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .button__sing_up .btn__sign::before {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .button__sing_up .btn__sign::before {
   opacity: 0;
   content: "";
   -webkit-transition: opacity 0.4s ease;
@@ -2302,13 +2306,13 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   width: 100%;
   height: 100%;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .button__sing_up .btn__sign:hover::before {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .button__sing_up .btn__sign:hover::before {
   opacity: 1;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .button__sing_up .btn__sign:hover p {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .button__sing_up .btn__sign:hover p {
   color: #fff;
 }
-.bg__prices .wrapper__prices .flex__block__prices .block__prices .about__price .button__sing_up .btn__sign p {
+.bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices .about__price .button__sing_up .btn__sign p {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
@@ -2455,10 +2459,10 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   .bg__prices .wrapper__prices .flex__block__prices {
     margin: 40px 0;
   }
-  .bg__prices .wrapper__prices .flex__block__prices .block__prices {
+  .bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices {
     padding: 41px 68px;
   }
-  .bg__prices .wrapper__prices .flex__block__prices .block__prices:hover {
+  .bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
@@ -2467,10 +2471,10 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   .bg__prices .wrapper__prices .flex__block__prices {
     margin: 40px 0;
   }
-  .bg__prices .wrapper__prices .flex__block__prices .block__prices {
+  .bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices {
     padding: 41px 58px;
   }
-  .bg__prices .wrapper__prices .flex__block__prices .block__prices:hover {
+  .bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
@@ -2479,10 +2483,10 @@ main section .wrapper__post .post .block__info .info__name__date .svg__comments 
   .bg__prices .wrapper__prices .flex__block__prices {
     margin: 40px 0;
   }
-  .bg__prices .wrapper__prices .flex__block__prices .block__prices {
+  .bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices {
     padding: 31px 38px;
   }
-  .bg__prices .wrapper__prices .flex__block__prices .block__prices:hover {
+  .bg__prices .wrapper__prices .flex__block__prices .anim__block .block__prices:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
