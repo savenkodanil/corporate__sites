@@ -228,12 +228,24 @@
         .wrapper__team {
             
             .our__team {
-                gap: 5px 30px;
+                gap: 50px 30px;
                 .block__team {
-                    transform: scale(.9);
+
+                    .img__team {
+                        img {
+                            width: 280px;
+                            height: 280px;
+                        }
+                    }
+
+                    .name__and__about {
+                        .about {
+                            max-width: 275px;
+                        }
+                    }
 
                     &:hover {
-                        transform: scale(1);
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -242,13 +254,24 @@
 
     @media(max-width:400px) {
         .wrapper__team {
-            margin: 30px 15px 0 15px;
+            margin: 60px 15px 0 15px;
             .our__team {
                 .block__team {
-                    transform: scale(.8);
+                    .img__team {
+                        img {
+                            width: 240px;
+                            height: 240px;
+                        }
+                    }
+
+                    .name__and__about {
+                        .about {
+                            max-width: 240px;
+                        }
+                    }
 
                     &:hover {
-                        transform: scale(.9);
+                        transform: scale(1.1);
                     }
                 }
             }

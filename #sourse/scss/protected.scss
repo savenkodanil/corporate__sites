@@ -180,3 +180,17 @@
         padding: 0 7px;
     }
 }
+
+@media (max-width:375px) {
+    .protected__bg {
+        .protected {
+            .ip {
+                font-size: .7rem;
+            }
+        
+            .isp {
+                font-size: .7rem;
+            }
+        }
+    }
+}

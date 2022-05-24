@@ -44,6 +44,14 @@ main {
                         max-width: 480px;
 
                         margin: 59px 0 84px 0;
+
+                        opacity: 0;
+                        transform: translateY(-15px);
+                        transition: .8s ease;
+                        &._active {
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
                     }
 
                     .info__name__date {
@@ -51,6 +59,14 @@ main {
                         .name__date {
                             display: flex;
                             gap: 10px;
+
+                            opacity: 0;
+                            transform: translateY(-15px);
+                            transition: .8s .2s ease;
+                            &._active {
+                                opacity: 1;
+                                transform: translateY(0px);
+                            }
 
                             .name {
                                 font-weight: 400;
@@ -74,6 +90,14 @@ main {
                             gap: 5px 3px;
                             flex-wrap: wrap;
                             margin: 7px 0;
+
+                            opacity: 0;
+                            transform: translateY(-15px);
+                            transition: .8s .4s ease;
+                            &._active {
+                                opacity: 1;
+                                transform: translateY(0px);
+                            }
                             
                             a {
                                 font-weight: 400;
@@ -83,6 +107,23 @@ main {
                                 letter-spacing: 0.5px;
                                 text-transform: uppercase;
                                 color: #4CB649;
+                                position: relative;
+
+                                &:after {
+                                    background-color: #4CB649;
+                                    display: block;
+                                    content: "";
+                                    height: 1px;
+                                    width: 0%;
+                                    left:50%;
+                                    position:absolute;
+                                    transition: width .2s ease;
+                                    transform:translateX(-50%);
+                                }
+                                &:hover:after,
+                                &:focus:after {
+                                    width: 90%;
+                                }
                             }
                         }
 
@@ -92,6 +133,14 @@ main {
                             gap: 12px;
 
                             align-items: center;
+
+                            opacity: 0;
+                            transform: translateY(-15px);
+                            transition: .8s .6s ease;
+                            &._active {
+                                opacity: 1;
+                                transform: translateY(0px);
+                            }
 
                             p {
                                 font-weight: 400;

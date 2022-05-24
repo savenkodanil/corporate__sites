@@ -176,6 +176,10 @@ body {
                            
                             box-shadow: 0px 3px 14px -5px #000000;
 
+                            &.active {
+                                background: rgb(211 211 211 / 50%);
+                            }
+
                             &.open {
                                 display: block;
                             }
@@ -280,6 +284,10 @@ body {
                             
                             box-shadow: 0px 3px 14px -5px #000000;
 
+                            &.active {
+                                background: rgb(211 211 211 / 50%);
+                            }
+
                             &.open {
                                 display: block;
                             }
@@ -382,6 +390,11 @@ body {
                             top: 25px;
 
                             box-shadow: 0px 3px 14px -5px #000000;
+
+                            &.active {
+                                background: rgb(211 211 211 / 50%);
+                            }
+                            
                             &.open {
                                 display: block;
                             }
@@ -469,6 +482,13 @@ body {
 
                 cursor: pointer;
 
+                &.open {
+                    background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+                    p {
+                        color: #fff;
+                    }
+                }
+
                 &::before {
                     opacity: 0;
                     content: "";
@@ -530,6 +550,13 @@ body {
                 overflow: hidden;
 
                 cursor: pointer;
+
+                &.open {
+                    background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+                    p {
+                        color: #fff;
+                    }
+                }
 
                 &::before {
                     opacity: 0;
