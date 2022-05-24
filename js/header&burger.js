@@ -4,22 +4,28 @@ function body(){
 
 $(document).ready(function() {
     $('.nav__menu__why').click(function(event) {
-        $('.sub__menu , .arrow').toggleClass('open active');
+        $('.sub__menu , .arrow').toggleClass('open ');
     });
 });
 
 $(document).ready(function() {
     $('.nav__menu__sup').click(function(event) {
-        $('.arrow__sup , .sub__menu__sup').toggleClass('open active');
+        $('.arrow__sup , .sub__menu__sup').toggleClass('open ');
     });
 });
 
 $(document).ready(function() {
     $('.nav__menu__res').click(function(event) {
-        $('.arrow__res, .sub__menu__res').toggleClass('open active');
+        $('.arrow__res, .sub__menu__res').toggleClass('open ');
     });
 });
 
+
+$(document).ready(function() {
+    $('.burger').click(function(event) {
+        $('.sub__menu , .sub__menu__sup , .sub__menu__res ').toggleClass('active');
+    });
+});
 /******************************
 *************БУРГЕР************
 ******************************/
@@ -30,6 +36,7 @@ $(document).ready(function() {
         $('.burger , .header , .header__nav , body , .get__start__button , .log__button ').toggleClass('open');
     });
 });
+
 
 
 // $(document).ready(function() {
