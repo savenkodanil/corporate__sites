@@ -4,19 +4,19 @@
 ******************************/
 $(document).ready(function() {
     $('.log__button , .get__start__button , .button__sing_up').click(function(event) {
-        $('html , body , .popup-bg , .modal__window , .close__modal__window , .overlay , .popup-bg , .materialContainer').toggleClass('active');
+        $('html , body , .overlay , .materialContainer').toggleClass('active');
     });
   });
   
   $(document).ready(function() {
     $('.close__modal__window , .close__popup').click(function(event) {
-        $('html , body , .overlay , .materialContainer , .bg__team').removeClass('active');
+        $('html , body , .overlay , .materialContainer , .bg__team , .popup-bg , .modal__window , .close__modal__window').removeClass('active');
     });
   });
   
   $(document).ready(function() {
     $('.overlay').click(function(event) {
-        $('html , body , .overlay , .materialContainer').removeClass('active');
+        $('html , body , .overlay , .materialContainer , .popup-bg , .modal__window , .close__modal__window').removeClass('active');
     });
   });
 
@@ -26,6 +26,14 @@ $(document).ready(function() {
 $(document).ready(function() {
    $('.team').click(function(event) {
        $('html , body , .bg__team').toggleClass('active');
+   });
+ });
+/**********************************
+*******МОДАЛЬНОЕ ОКНО CONTACTS*****
+***********************************/
+$(document).ready(function() {
+   $('.contact').click(function(event) {
+       $('html , body , .popup-bg , .modal__window , .overlay , .close__modal__window').toggleClass('active');
    });
  });
 

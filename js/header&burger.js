@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.burger').click(function(event) {
-        $('.burger , .header , .header__nav , body').toggleClass('open');
+        $('.burger , .header , .header__nav , body , .get__start__button , .log__button , .sub__menu , .sub__menu__sup , .sub__menu__res').toggleClass('open active');
     });
 });
 
