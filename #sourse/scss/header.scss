@@ -175,6 +175,7 @@ body {
 
                            
                             box-shadow: 0px 3px 14px -5px #000000;
+                            backdrop-filter: blur(7px);
 
                             &.active {
                                 background: rgb(211 211 211 / 50%);
@@ -283,6 +284,7 @@ body {
 
                             
                             box-shadow: 0px 3px 14px -5px #000000;
+                            backdrop-filter: blur(7px);
 
                             &.active {
                                 background: rgb(211 211 211 / 50%);
@@ -390,6 +392,7 @@ body {
                             top: 25px;
 
                             box-shadow: 0px 3px 14px -5px #000000;
+                            backdrop-filter: blur(7px);
 
                             &.active {
                                 background: rgb(211 211 211 / 50%);
@@ -469,7 +472,6 @@ body {
             .log__button {
                 all: unset;
 
-                border: 2px solid#4CB649;
                 border-radius: 30px;
 
                 background: #fff;
@@ -483,14 +485,14 @@ body {
                 cursor: pointer;
 
                 &.open {
-                    background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+                    
                     p {
                         color: #fff;
                     }
                 }
 
                 &::before {
-                    opacity: 0;
+                    opacity: 1;
                     content: "";
 
                     transition: opacity .4s ease;
@@ -508,16 +510,6 @@ body {
                     height: 100%;
                 }
 
-                &:hover::before {
-                    opacity: 1;
-                }
-
-                &:hover {
-                
-                    p {
-                        color: #fff;
-                    }
-                }
 
                 p {
                     font-weight: 500;
@@ -527,7 +519,7 @@ body {
                     letter-spacing: 0.8px;
                     text-transform: uppercase;
                     
-                    color: #4CB649;
+                    color: #ffffff;
 
                     padding: 11px 28px;
 
@@ -715,7 +707,7 @@ body {
                                 top: 30px;
                                 &.open {
                                     display: flex;
-                                   justify-content: space-between;
+                                    justify-content: space-between;
                                 
                                     
                                 }
@@ -753,6 +745,7 @@ body {
                         .nav__menu__res {
                             .sub__menu__res {
                                 top: 30px;
+                                
                                 &.open {
                                     display: flex;
                                    justify-content: space-between;
@@ -764,6 +757,7 @@ body {
                                     border-right: 2px solid #4d4d4d;
                                     border-bottom: unset;
                                     padding: 10px 10px 10px 10px;
+                                    
 
                                     &:last-child {
                                         border-right: unset;
