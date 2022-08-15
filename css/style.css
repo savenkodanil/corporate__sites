@@ -57,6 +57,10 @@ table {
           box-sizing: border-box;
 }
 
+:root {
+  scrollbar-gutter: stable;
+}
+
 html, body {
   font-family: "Rubik", sans-serif;
   font-style: normal;
